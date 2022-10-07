@@ -45,7 +45,7 @@ resource "aws_ssm_parameter" "networkacc" {
 }
 
 resource "aws_ssm_parameter" "iamacc" {
-  name      = "commonroles/iamacc"
+  name      = "/commonroles/iamacc"
   type      = "String"
   value     = var.iam_account_id
   overwrite = true
