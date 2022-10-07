@@ -12,7 +12,7 @@ data "aws_iam_policy_document" "assume_role_policy" {
 
     principals {
       type        = "AWS"
-      identifiers = [var.account_id]
+      identifiers = [var.iam_account_id]
     }
   }
 }
